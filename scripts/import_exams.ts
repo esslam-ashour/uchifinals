@@ -7,8 +7,10 @@ const moment = require('moment');
 
 const prisma = new PrismaClient();
 
-async function importExams(filePath: string) {
-  const workbook = XLSX.readFile(filePath);
+const FILE_PATH = 'spring_2024.xlsx';
+
+async function importExams(FILE_PATH: string) {
+  const workbook = XLSX.readFile(FILE_PATH);
   const sheetName = workbook.SheetNames[0];
   const sheet = workbook.Sheets[sheetName];
   const data = XLSX.utils.sheet_to_json(sheet);
@@ -30,9 +32,7 @@ async function importExams(filePath: string) {
   console.log('Exams imported successfully');
 }
 
-const filePath = 'spring_2024.xlsx';
-
-importExams(filePath)
+importExams(FILE_PATH)
   .catch((e) => {
     console.error(e);
   })
