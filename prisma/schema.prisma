@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "postgresql"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+model Exam {
+  id           String   @id @default(cuid())
+  course       String   
+  section      String   
+  sectionTitle String   
+  instructor   String   
+  startTime    String   
+  endTime      String  
+  date         DateTime
+  room         String
+
+  @@index([course, section])
+  @@map("exams")
+}
