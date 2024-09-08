@@ -38,7 +38,7 @@ export default function ExamTable({ exams }: { exams: Exam[] }): JSX.Element {
   };
 
   return (
-    <div className='h-screen overflow-scroll'>
+    <div>
       <Table>
         <TableHeader>
           <TableRow>
@@ -81,7 +81,7 @@ export default function ExamTable({ exams }: { exams: Exam[] }): JSX.Element {
 
       <div className="flex justify-center items-center space-x-2 mt-4">
         {startPage > 1 && (
-          <button className="px-3 py-1 border rounded" onClick={handlePreviousPageGroup}>
+          <button className="px-3 py-1 border rounded-3xl" onClick={handlePreviousPageGroup}>
             ...
           </button>
         )}
@@ -92,7 +92,7 @@ export default function ExamTable({ exams }: { exams: Exam[] }): JSX.Element {
           return (
             <button
               key={page}
-              className={`px-3 py-1 border rounded ${highlightedButton === page ? 'bg-blue-500 text-white' : ''}`}
+              className={`px-3 py-1 border rounded-3xl hover:bg-blue-500 hover:text-white duration-300 ${highlightedButton === page ? 'bg-blue-500 text-white' : ''}`}
               onClick={() => handlePageChange(page)}
             >
               {page}
@@ -101,7 +101,7 @@ export default function ExamTable({ exams }: { exams: Exam[] }): JSX.Element {
         })}
 
         {endPage < totalPages && (
-          <button className="px-3 py-1 border rounded" onClick={handleNextPageGroup}>
+          <button className="px-3 py-1 border rounded-3xl" onClick={handleNextPageGroup}>
             ...
           </button>
         )}

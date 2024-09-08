@@ -27,7 +27,7 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          "min-h-screen max-h-screen bg-background font-sans antialiased bg-[#800000]",
+          "overscroll-none bg-background font-sans antialiased bg-[#800000]",
           fontSans.variable
         )} 
       >
