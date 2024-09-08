@@ -86,7 +86,8 @@ export default function ExamTable({ exams }: { exams: Exam[] }): JSX.Element {
           </button>
         )}
 
-        {Array.from({ length: endPage - startPage + 1 }, (_, idx) => {
+        {exams.length > 10 &&
+        Array.from({ length: endPage - startPage + 1 }, (_, idx) => {
           const page = startPage + idx;
           return (
             <button
