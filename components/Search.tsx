@@ -91,10 +91,6 @@ export default function Search(): JSX.Element {
             />
           </div>
         </form>
-        {filteredExams.length === 0 && searchParams.course === '' && searchParams.instructor === '' && searchParams.room === '' && searchParams.date === '' ? (
-          <p className="text-center text-gray-500 mt-4">Start searching by entering details above.</p>
-        ) : (
           <ExamTable exams={filteredExams} />
-      )}
       </div>
 )};
