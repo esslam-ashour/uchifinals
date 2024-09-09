@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { locations } from '@/data/locations';
 import { Exam } from '@/lib/definitions';
@@ -86,7 +86,7 @@ export default function ExamTable({ exams }: { exams: Exam[] }): JSX.Element {
           </button>
         )}
 
-        {exams.length > 10 &&
+        {
         Array.from({ length: endPage - startPage + 1 }, (_, idx) => {
           const page = startPage + idx;
           return (

@@ -91,6 +91,6 @@ export default function Search(): JSX.Element {
             />
           </div>
         </form>
-          <ExamTable exams={filteredExams} />
+          <ExamTable exams={filteredExams}/>
       </div>
 )};
