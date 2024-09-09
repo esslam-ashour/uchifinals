@@ -15,26 +15,23 @@ export default function Home() {
   const [filteredExams, setFilteredExams] = useState<Exam[]>([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchExams = async () => {
-      setLoading(true);
-      try {
-        const query = new URLSearchParams(searchParams as any).toString();
-        const res = await fetch(`/api/exams?${query}`);
-        if (res.ok) {
-          const data = await res.json();
-          setFilteredExams(data);
-        } else {
-          console.log('An error occurred while fetching exams');
-        }
-      } catch (error) {
-        console.error('Error fetching exams: ', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchExams();
-  }, [searchParams])
+  const handleSearch = async () => {
+    setLoading(true);
+    try {
+      const query = new URLSearchParams(searchParams).toString();
+      const res = await fetch(`/api/exams?${query}`);
+      if (res.ok) {
+        const data = await res.json();
+        setFilteredExams(data);
+      } else {
+        console.error('Failed to fetch exams');
+      } 
+    } catch (error) {
+      console.error('Error fetching exams: ', error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -46,7 +43,7 @@ export default function Home() {
   
   return (
     <div className="container mx-auto my-6 py-4 px-10 rounded-3xl bg-white">
-      <SearchForm searchParams={searchParams} onInputChange={handleInputChange} />
+      <SearchForm searchParams={searchParams} onInputChange={handleInputChange} onSearch={handleSearch}  />
       <ExamTable exams={filteredExams} loading={loading} />
     </div>
   );
