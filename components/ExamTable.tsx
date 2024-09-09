@@ -15,10 +15,6 @@ export default function ExamTable({ exams, loading }: ExamTableProps) {
 
   const currentExams = exams.slice((currentPage - 1) * examsPerPage, currentPage * examsPerPage);
 
-  if (loading) {
-    return <p>Loading...</p>;
-  }
-
   return (
     <div>
       <Table>
