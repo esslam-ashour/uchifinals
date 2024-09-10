@@ -1,6 +1,6 @@
 ## uchifinals - your uchicago final schedule, better
 
-  <img width="371" alt="image" src="https://github.com/user-attachments/assets/b9917fe9-22ed-4dba-b26c-41c39003dbf7">
+  <img width="371" alt="image" align="center" src="https://github.com/user-attachments/assets/b9917fe9-22ed-4dba-b26c-41c39003dbf7">
 
 A final exam scheduler for undergraduate University of Chicago students.
 
