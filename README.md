@@ -5,4 +5,4 @@ A final exam scheduler for undergraduate University of Chicago students.
 
 **Easily export schedule to calendar** - uchifinals allows students to export any exam to their Google/Apple/Outlook calendar with the click of a button, removing the need to manually create events for final exams.
 
-**Replaces an inconvenient system** - the UChicago registrar sends out final exams in an inconvenient and barely readable excel sheet, uchifinals can completely replace it and make the UChicago experience just a bit easier.
+**Replaces an inconvenient system** - each quarter the UChicago registrar sends out final exams in an inconvenient and barely readable excel sheet, uchifinals can completely replace it and make the UChicago experience just a bit easier.
