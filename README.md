@@ -1,6 +1,11 @@
-## uchifinals - your uchicago final schedule, better
-<p align="center" width="100%">
-    <img width="371" alt="image" align="center" src="https://github.com/user-attachments/assets/b9917fe9-22ed-4dba-b26c-41c39003dbf7">
+<p align="center">
+  <a href="uchifinals.vercel.app">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/b9917fe9-22ed-4dba-b26c-41c39003dbf7">
+      <img src="https://github.com/user-attachments/assets/b9917fe9-22ed-4dba-b26c-41c39003dbf7" height="128">
+    </picture>
+    <h1 align="center">uchifinals</h1>
+  </a>
 </p>
 
 A final exam scheduler for undergraduate University of Chicago students.
