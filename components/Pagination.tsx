@@ -37,7 +37,7 @@ export default function Pagination({ totalItems, itemsPerPage, currentPage, onPa
         return (
           <button
             key={page}
-            className={`px-3 py-1 border rounded-3xl ${currentPage === page ? 'bg-blue-500 text-white' : ''}`}
+            className={`px-3 py-1 border rounded-3xl ${currentPage === page ? 'bg-blue-500 text-white' : 'hover:bg-blue-500 hover:text-white duration-300'}`}
             onClick={() => handlePageChange(page)}
           >
             {page}
