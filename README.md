@@ -4,7 +4,6 @@
       <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/b9917fe9-22ed-4dba-b26c-41c39003dbf7">
       <img src="https://github.com/user-attachments/assets/b9917fe9-22ed-4dba-b26c-41c39003dbf7" height="128">
     </picture>
-    <h1 align="center">uchifinals</h1>
   </a>
 </p>
 
