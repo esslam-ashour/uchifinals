@@ -1,7 +1,8 @@
 ## uchifinals - your uchicago final schedule, better
 
-<img width="371" alt="image" src="https://github.com/user-attachments/assets/b9917fe9-22ed-4dba-b26c-41c39003dbf7">
-
+<p align="center>
+  <img width="371" alt="image" src="https://github.com/user-attachments/assets/b9917fe9-22ed-4dba-b26c-41c39003dbf7">
+</p>
 A final exam scheduler for undergraduate University of Chicago students.
 
 **Intuitive search system** - uchifinals has an intuitive and expansive search system that allows students to search for their exams using different criteria, such as course name, instructor, exam date, exam location.
