@@ -22,7 +22,7 @@ export async function GET(request: Request) {
         ]
       }
     });
-
+    
     return NextResponse.json(exams);
   } catch (error) {
     return NextResponse.json({ error: 'An error occurred while fetching exams' }, { status: 500 });

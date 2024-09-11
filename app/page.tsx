@@ -15,8 +15,13 @@ export default function Home() {
 
   const handleSearch = async () => {
     setLoading(true);
+    const trimmedSearchParams = {
+      ...searchParams,
+      details: searchParams.details.trim(),
+    }
+
     try {
-      const query = new URLSearchParams(searchParams).toString();
+      const query = new URLSearchParams(trimmedSearchParams).toString();
       const res = await fetch(`/api/exams?${query}`);
       if (res.ok) {
         const data = await res.json();
