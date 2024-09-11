@@ -7,9 +7,7 @@ import { Exam } from '@/lib/definitions';
 
 export default function Home() {
   const [searchParams, setSearchParams] = useState({
-    course: '',
-    instructor: '',
-    room: '',
+    details: '',
     date: '',
   });
   const [filteredExams, setFilteredExams] = useState<Exam[]>([]);

@@ -5,7 +5,7 @@ import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';  // Assuming you have a Button component
 
 interface SearchFormProps {
-  searchParams: { course: string; instructor: string; room: string; date: string; };
+  searchParams: { details: string; date: string; };
   onInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onSearch: () => void;
 }
@@ -15,33 +15,12 @@ export default function SearchForm({ searchParams, onInputChange, onSearch }: Se
     <div className="container mx-auto my-6 py-4 px-10 rounded-3xl bg-white">
       <form className="grid gap-4 mb-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <Label htmlFor="course">Course</Label>
           <Input
-            id="course"
-            name="course"
-            value={searchParams.course}
+            id="details"
+            name="details"
+            value={searchParams.details}
             onChange={onInputChange}
-            placeholder="e.g., CMSC 14100"
-          />
-        </div>
-        <div>
-          <Label htmlFor="instructor">Instructor</Label>
-          <Input
-            id="instructor"
-            name="instructor"
-            value={searchParams.instructor}
-            onChange={onInputChange}
-            placeholder="e.g., John Doe"
-          />
-        </div>
-        <div>
-          <Label htmlFor="location">Location</Label>
-          <Input
-            id="room"
-            name="room"
-            value={searchParams.room}
-            onChange={onInputChange}
-            placeholder="e.g., Kent 107"
+            placeholder="Search by course, instructor or room"
           />
         </div>
         <div>
