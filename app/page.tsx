@@ -15,7 +15,7 @@ export default function Home() {
   const [searched, setSearched] = useState(false);
 
   const handleSearch = async () => {
-    if (!searchParams.details && !searchParams.date) {
+    if (!searchParams.details && !searchParams.date && filteredExams.length == 0) {
       return;
     }
     setLoading(true);
