@@ -12,8 +12,8 @@ interface SearchFormProps {
 export default function SearchForm({ searchParams, onInputChange, onSearch }: SearchFormProps): React.ReactElement {
   return (
     <div className="container mx-auto my-6 py-4 px-10 rounded-3xl bg-white">
-      <form className="grid grid-cols-4 gap-4 mb-6">
-        <div className="col-span-3">
+      <form className="grid grid-rows-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-6 md:mb-1">
+        <div className="row-span-1 md:col-span-3 lg:col-span-5">
           <Input
             id="details"
             name="details"
@@ -22,7 +22,7 @@ export default function SearchForm({ searchParams, onInputChange, onSearch }: Se
             placeholder="Search by course name, course number, instructor name, or room..."
           />
         </div>
-        <div className="col-span-1">
+        <div className="row-span-1 md:col-span-1 lg:col-span-1">
           <Input
             id="date"
             name="date"
