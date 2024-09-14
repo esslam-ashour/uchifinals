@@ -8,11 +8,11 @@ datasource db {
 }
 
 model Exam {
-  id           String   @id @default(cuid())
+  id           Int    @id @default(autoincrement())
   course       String   
-  section      String   
+  section      String
   sectionTitle String   
-  instructor   String   
+  instructor   String @default("")
   startTime    String   
   endTime      String  
   date         DateTime
