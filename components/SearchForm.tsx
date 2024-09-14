@@ -22,7 +22,7 @@ export default function SearchForm({ searchParams, onInputChange, onSearch }: Se
             placeholder="Search by course name, course number, instructor name, or room..."
           />
         </div>
-        <div className="row-span-1 md:col-span-1 lg:col-span-1">
+        <div className="row-span-1 md:col-span-1 lg:col-span-1 w-full">
           <Input
             id="date"
             name="date"
