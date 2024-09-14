@@ -7,9 +7,10 @@ import { Exam } from '@/lib/definitions';
 interface ExamTableProps {
   exams: Exam[];
   loading: boolean;
+  searched: boolean;
 }
 
-export default function ExamTable({ exams, loading }: ExamTableProps) {
+export default function ExamTable({ exams, loading, searched }: ExamTableProps) {
   const [currentPage, setCurrentPage] = useState(1);
   const examsPerPage = 10;
 
@@ -50,7 +51,7 @@ export default function ExamTable({ exams, loading }: ExamTableProps) {
         </TableBody>
       </Table>
 
-      {exams.length === 0 && <p className="text-center mt-4 text-gray-500">No exams found matching your search criteria.</p>}
+      {exams.length === 0 && <p className="text-center mt-4 text-gray-500">{searched ? "No exams found matching your search criteria." : "Start searching to view results."}</p>}
 
       <Pagination totalItems={exams.length} itemsPerPage={examsPerPage} currentPage={currentPage} onPageChange={setCurrentPage} />
     </div>

@@ -12,8 +12,12 @@ export default function Home() {
   });
   const [filteredExams, setFilteredExams] = useState<Exam[]>([]);
   const [loading, setLoading] = useState(true);
+  const [searched, setSearched] = useState(false);
 
   const handleSearch = async () => {
+    if (!searchParams.details && !searchParams.date) {
+      return;
+    }
     setLoading(true);
     const trimmedSearchParams = {
       ...searchParams,
@@ -32,6 +36,7 @@ export default function Home() {
     } catch (error) {
       console.error('Error fetching exams: ', error);
     } finally {
+      setSearched(true);
       setLoading(false);
     }
   };
@@ -47,7 +52,7 @@ export default function Home() {
   return (
     <div className="container mx-auto my-6 py-4 px-10 rounded-3xl bg-white">
       <SearchForm searchParams={searchParams} onInputChange={handleInputChange} onSearch={handleSearch}  />
-      <ExamTable exams={filteredExams} loading={loading} />
+      <ExamTable exams={filteredExams} loading={loading} searched={searched} />
     </div>
   );
 }
