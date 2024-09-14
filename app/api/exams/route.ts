@@ -1,8 +1,6 @@
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/db';
 
-import { locations } from '@/data/locations';
-
 export async function GET(request: Request) {
   const url = new URL(request.url);
   const details = url.searchParams.get('details');
