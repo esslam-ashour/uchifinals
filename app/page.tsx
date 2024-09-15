@@ -51,7 +51,7 @@ export default function Home() {
   
   return (
     <div className="container mx-auto my-6 py-4 px-10 rounded-3xl bg-white">
-      <SearchForm searchParams={searchParams} onInputChange={handleInputChange} onSearch={handleSearch}  />
+      <SearchForm searchParams={searchParams} onInputChange={handleInputChange} onSearch={handleSearch} />
       <ExamTable exams={filteredExams} loading={loading} searched={searched} />
     </div>
   );
