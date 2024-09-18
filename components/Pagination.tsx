@@ -26,9 +26,9 @@ export default function Pagination({ totalItems, itemsPerPage, currentPage, onPa
   };
 
   return (
-    <div className="flex justify-center items-center space-x-2 mt-4">
+    <div className="flex flex-wrap justify-center items-center space-x-2 mt-4">
       {startPage > 1 && (
-        <button className="px-3 py-1 border rounded-3xl" onClick={handlePreviousPageGroup}>
+        <button className="px-2 py-1 border rounded-3xl" onClick={handlePreviousPageGroup}>
           ...
         </button>
       )}
@@ -37,7 +37,7 @@ export default function Pagination({ totalItems, itemsPerPage, currentPage, onPa
         return (
           <button
             key={page}
-            className={`px-3 py-1 border rounded-3xl ${currentPage === page ? 'bg-blue-500 text-white' : 'hover:bg-blue-500 hover:text-white duration-300'}`}
+            className={`px-2 py-1 border rounded-3xl ${currentPage === page ? 'bg-blue-500 text-white' : 'hover:bg-blue-500 hover:text-white duration-300'}`}
             onClick={() => handlePageChange(page)}
           >
             {page}
@@ -45,10 +45,18 @@ export default function Pagination({ totalItems, itemsPerPage, currentPage, onPa
         );
       })}
       {endPage < totalPages && (
-        <button className="px-3 py-1 border rounded-3xl" onClick={handleNextPageGroup}>
+        <button className="px-2 py-1 border rounded-3xl" onClick={handleNextPageGroup}>
           ...
         </button>
       )}
+      <style jsx>{`
+        @media (max-width: 640px) {
+          .pagination-buttons {
+            padding: 4px;
+            margin: 4px;
+          }
+        }
+      `}</style>
     </div>
   );
 }

@@ -11,8 +11,8 @@ interface SearchFormProps {
 
 export default function SearchForm({ searchParams, onInputChange, onSearch }: SearchFormProps): React.ReactElement {
   return (
-    <div className="container mx-auto my-6 py-4 px-10 rounded-3xl bg-white">
-      <form className="grid grid-rows-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-6">
+    <div className="sticky top-0 z-10 container my-6 py-4 px-10 bg-white shadow">
+      <form className="grid grid-rows-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
         <div className="row-span-1 md:col-span-3 lg:col-span-5">
           <Input
             id="details"
@@ -27,6 +27,7 @@ export default function SearchForm({ searchParams, onInputChange, onSearch }: Se
             id="date"
             name="date"
             type="date"
+            className='justify-center'
             value={searchParams.date}
             onChange={onInputChange}
           />
@@ -36,7 +37,7 @@ export default function SearchForm({ searchParams, onInputChange, onSearch }: Se
       <div className="flex justify-center">
         <Button
           onClick={onSearch}
-          className="w-full md:w-1/2 lg:w-1/3 bg-[#800000] text-white px-4 py-2 rounded-3xl hover:bg-[#800000bb] transition-all duration-300"
+          className="w-full my-4 md:my-auto lg:my-auto bg-[#800000] text-white rounded-3xl hover:bg-[#800000bb] transition-all duration-300"
         >
           Search
         </Button>
