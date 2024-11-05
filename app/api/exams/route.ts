@@ -4,13 +4,11 @@ import prisma from '@/lib/db';
 export async function GET(request: Request) {
   const url = new URL(request.url);
   const details = url.searchParams.get('details');
-  const date = url.searchParams.get('date');
 
   try {
     const exams = await prisma.exam.findMany({
       where: {
         AND: [
-          date ? { date: new Date(date) } : {},
           details ? {
             OR: [
               { course: { contains: details, mode: 'insensitive' } },

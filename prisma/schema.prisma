@@ -4,19 +4,19 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url = env("POSTGRES_URL")
+  url      = env("POSTGRES_URL")
 }
 
 model Exam {
-  id           Int    @id @default(autoincrement())
-  course       String   
+  course       String
   section      String
-  sectionTitle String   
-  instructor   String @default("")
-  startTime    String   
-  endTime      String  
+  sectionTitle String
+  instructor   String   @default("")
+  startTime    String
+  endTime      String
   date         DateTime
   room         String
+  id           Int      @id @default(autoincrement())
 
   @@index([course, section])
   @@map("exams")

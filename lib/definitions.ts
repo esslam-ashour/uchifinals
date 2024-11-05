@@ -3,6 +3,7 @@ import { Url } from "next/dist/shared/lib/router/router";
 type examTime = string;
 
 export interface Exam {
+  [key: string]: string;
   course: string;
   section: string;
   sectionTitle: string;
@@ -11,7 +12,6 @@ export interface Exam {
   endTime: examTime;
   date: string;
   room: string;
-  [key: string]: string;
 }
 
 export interface location {
