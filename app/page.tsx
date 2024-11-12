@@ -54,7 +54,7 @@ export default function Home() {
   };
 
   return (
-    <div className="container mx-auto my-6 py-4 px-10 rounded-3xl bg-white">
+    <div className="container mx-auto my-6 py-4 px-4 sm:px-6 lg:px-8 rounded-3xl bg-white">
       <SearchForm searchParams={searchParams} onInputChange={handleInputChange} onSearch={handleSearch} />
       <ExamTable key={JSON.stringify(filteredExams)} exams={filteredExams} searched={searched} resetPageTrigger={resetPageTrigger} />
     </div>

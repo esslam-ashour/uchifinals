@@ -26,15 +26,15 @@ export default function ExamTable({ exams, searched, resetPageTrigger }: ExamTab
   }, [resetPageTrigger]);
 
   return (
-    <div>
-      <Table>
+    <div className="overflow-x-auto">
+      <Table className="min-w-full">
         <TableHeader>
           <TableRow>
-            <TableHead>Course</TableHead>
-            <TableHead>Instructor</TableHead>
-            <TableHead>Location</TableHead>
-            <TableHead>Date</TableHead>
-            <TableHead>Time</TableHead>
+            <TableHead className="px-4 py-2">Course</TableHead>
+            <TableHead className="px-4 py-2">Instructor</TableHead>
+            <TableHead className="px-4 py-2">Location</TableHead>
+            <TableHead className="px-4 py-2">Date</TableHead>
+            <TableHead className="px-4 py-2">Time</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>

@@ -16,7 +16,7 @@ export default function SearchForm({ searchParams, onInputChange, onSearch }: Se
   };
 
   return (
-    <div className="sticky top-0 z-10 container my-6 py-4 px-10 bg-white">
+    <div className="sticky top-0 z-10 container my-6 py-4 px-4 md:px-10 bg-white">
       <form className="grid grid-rows-2 md:grid-cols-4 lg:grid-cols-6 gap-4" onSubmit={handleSubmit}>
         <div className="row-span-2 mb-6 md:col-span-4 lg:col-span-6">
           <Input
@@ -25,6 +25,7 @@ export default function SearchForm({ searchParams, onInputChange, onSearch }: Se
             value={searchParams.details}
             onChange={onInputChange}
             placeholder="Search by course name, course number, instructor name, or room..."
+            className="w-full"
           />
         </div>
       </form>
