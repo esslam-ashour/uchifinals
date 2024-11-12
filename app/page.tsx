@@ -16,7 +16,6 @@ export default function Home() {
     date: '',
   });
   const [filteredExams, setFilteredExams] = useState<Exam[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
   const [searched, setSearched] = useState<boolean>(false);
   const [resetPageTrigger, setResetPageTrigger] = useState<boolean>(false);
 
@@ -24,7 +23,6 @@ export default function Home() {
     if (!searchParams.details && !searchParams.date && filteredExams.length === 0) {
       return;
     }
-    setLoading(true);
     const trimmedSearchParams = {
       ...searchParams,
       details: searchParams.details.trim(),
@@ -43,7 +41,6 @@ export default function Home() {
       console.error('Error fetching exams: ', error);
     } finally {
       setSearched(true);
-      setLoading(false);
       setResetPageTrigger(prevState => !prevState);
     }
   };
@@ -59,7 +56,7 @@ export default function Home() {
   return (
     <div className="container mx-auto my-6 py-4 px-10 rounded-3xl bg-white">
       <SearchForm searchParams={searchParams} onInputChange={handleInputChange} onSearch={handleSearch} />
-      <ExamTable key={JSON.stringify(filteredExams)} exams={filteredExams} loading={loading} searched={searched} resetPageTrigger={resetPageTrigger} />
+      <ExamTable key={JSON.stringify(filteredExams)} exams={filteredExams} searched={searched} resetPageTrigger={resetPageTrigger} />
     </div>
   );
 }

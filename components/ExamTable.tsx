@@ -6,12 +6,11 @@ import ExamRow from '@/components/ExamRow';
 
 interface ExamTableProps {
   exams: Exam[];
-  loading: boolean;
   searched: boolean;
   resetPageTrigger: boolean;
 }
 
-export default function ExamTable({ exams, loading, searched, resetPageTrigger }: ExamTableProps) {
+export default function ExamTable({ exams, searched, resetPageTrigger }: ExamTableProps) {
   const [currentPage, setCurrentPage] = useState(1); // Internal state for pagination
   const examsPerPage = 10;
 
@@ -50,7 +49,6 @@ export default function ExamTable({ exams, loading, searched, resetPageTrigger }
           {searched ? "No exams found matching your search criteria." : "Start searching to view results."}
         </p>
       )}
-
       <Pagination
         totalItems={exams.length}
         itemsPerPage={examsPerPage}
