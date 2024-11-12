@@ -27,22 +27,24 @@ export default function ExamTable({ exams, searched, resetPageTrigger }: ExamTab
 
   return (
     <div className="overflow-x-auto">
-      <Table className="min-w-full">
-        <TableHeader>
-          <TableRow>
-            <TableHead className="px-4 py-2">Course</TableHead>
-            <TableHead className="px-4 py-2">Instructor</TableHead>
-            <TableHead className="px-4 py-2">Location</TableHead>
-            <TableHead className="px-4 py-2">Date</TableHead>
-            <TableHead className="px-4 py-2">Time</TableHead>
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          {currentExams.map((exam) => (
-            <ExamRow key={exam.id} exam={exam} />
-          ))}
-        </TableBody>
-      </Table>
+      <div className="responsive-table">
+        <Table className="min-w-full">
+          <TableHeader>
+            <TableRow>
+              <TableHead className="px-4 py-2">Course</TableHead>
+              <TableHead className="px-4 py-2">Instructor</TableHead>
+              <TableHead className="px-4 py-2">Location</TableHead>
+              <TableHead className="px-4 py-2">Date</TableHead>
+              <TableHead className="px-4 py-2">Time</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {currentExams.map((exam) => (
+              <ExamRow key={exam.id} exam={exam} />
+            ))}
+          </TableBody>
+        </Table>
+      </div>
 
       {exams.length === 0 && (
         <p className="text-center mt-4 text-gray-500">
