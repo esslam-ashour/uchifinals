@@ -36,6 +36,7 @@ export default function ExamTable({ exams, searched, resetPageTrigger }: ExamTab
               <TableHead className="px-4 py-2">Location</TableHead>
               <TableHead className="px-4 py-2">Date</TableHead>
               <TableHead className="px-4 py-2">Time</TableHead>
+              <TableHead className="px-4 py-2"></TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -45,7 +46,6 @@ export default function ExamTable({ exams, searched, resetPageTrigger }: ExamTab
           </TableBody>
         </Table>
       </div>
-
       {exams.length === 0 && (
         <p className="text-center mt-4 text-gray-500">
           {searched ? "No exams found matching your search criteria." : "Start searching to view results."}
