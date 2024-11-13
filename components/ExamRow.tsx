@@ -23,13 +23,12 @@ export default function ExamRow({ exam }: { exam: Exam }) {
   };
 
   const formatTime = (timeStr: string) => {
-    const [hours, minutes] = timeStr.split(':');
+    const [hours, minutes] = timeStr.split(':').map(Number);
+    
     const date = new Date();
-    const chicagoDate = new Date(date.toLocaleString('en-US', {
-      timeZone: 'America/Chicago'
-    }));
-    chicagoDate.setHours(parseInt(hours), parseInt(minutes));
-    return chicagoDate.toLocaleTimeString('en-US', {
+    date.setHours(hours, minutes);
+
+    return date.toLocaleTimeString('en-US', {
       hour: '2-digit',
       minute: '2-digit',
       hour12: true,
