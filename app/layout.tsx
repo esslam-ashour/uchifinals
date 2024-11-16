@@ -3,6 +3,7 @@ import { Inter as FontSans } from "next/font/google";
 
 import NavBar from "@/components/NavBar";
 import { cn } from "@/lib/utils";
+import { Analytics } from '@vercel/analytics/next';
 
 import "@/styles/globals.css";
 
@@ -35,6 +36,7 @@ export default function RootLayout({
       >
         <NavBar />
         {children}
+        <Analytics />
       </body>
     </html>
   );
