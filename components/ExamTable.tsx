@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Table, TableBody, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import Exam from '@/lib/types';
 import Pagination from '@/components/Pagination';
 import ExamRow from '@/components/ExamRow';
 
@@ -7,18 +8,6 @@ interface ExamTableProps {
   exams: Exam[];
   searched: boolean;
   resetPageTrigger: boolean;
-}
-
-interface Exam {
-  [key: string]: string;
-  course: string;
-  section: string;
-  sectionTitle: string;
-  instructor: string;
-  startTime: string;
-  endTime: string;
-  date: string;
-  room: string;
 }
 
 export default function ExamTable({ exams, searched, resetPageTrigger }: ExamTableProps) {

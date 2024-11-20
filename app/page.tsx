@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import SearchForm from '@/components/SearchForm';
 import ExamTable from '@/components/ExamTable';
-import { Exam } from '@/lib/definitions';
+import Exam from '@/lib/types';
 
 interface SearchParams {
   details: string;

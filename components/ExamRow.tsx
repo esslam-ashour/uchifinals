@@ -1,3 +1,4 @@
+import Exam from '@/lib/types';
 import { TableRow, TableCell } from '@/components/ui/table';
 import { Button } from '@/components/ui/button';
 import { Calendar, ChevronDown } from 'lucide-react';
@@ -15,18 +16,6 @@ import {
   generateOutlookCalendarUrl,
   downloadICSFile,
 } from '@/lib/calendar-utils';
-
-interface Exam {
-  [key: string]: string;
-  course: string;
-  section: string;
-  sectionTitle: string;
-  instructor: string;
-  startTime: string;
-  endTime: string;
-  date: string;
-  room: string;
-}
 
 export default function ExamRow({ exam }: { exam: Exam }) {
   const addToGoogleCalendar = () => {
