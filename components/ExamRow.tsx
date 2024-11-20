@@ -1,5 +1,3 @@
-import { Exam } from '@/lib/definitions';
-import { locations } from '@/data/locations';
 import { TableRow, TableCell } from '@/components/ui/table';
 import { Button } from '@/components/ui/button';
 import { Calendar, ChevronDown } from 'lucide-react';
@@ -17,6 +15,18 @@ import {
   generateOutlookCalendarUrl,
   downloadICSFile,
 } from '@/lib/calendar-utils';
+
+interface Exam {
+  [key: string]: string;
+  course: string;
+  section: string;
+  sectionTitle: string;
+  instructor: string;
+  startTime: string;
+  endTime: string;
+  date: string;
+  room: string;
+}
 
 export default function ExamRow({ exam }: { exam: Exam }) {
   const addToGoogleCalendar = () => {
@@ -48,18 +58,11 @@ export default function ExamRow({ exam }: { exam: Exam }) {
         <span className="text-sm">{exam.instructor}</span>
       </TableCell>
       <TableCell className="block sm:table-cell">
-        {locations[exam.room.split(" ")[0]] ? (
-          <a 
-            target="_blank" 
-            href={locations[exam.room.split(" ")[0]]?.mapLink?.toString()} 
-            className="text-blue-500 text-sm hover:underline inline-flex items-center"
-            rel="noopener noreferrer"
+          <span
+            className="text-sm inline-flex items-center"
           >
             {exam.room}
-          </a>
-        ) : (
-          <span className="text-sm">{exam.room}</span>
-        )}
+          </span>
       </TableCell>
       <TableCell className="block sm:table-cell">
         <span className="text-sm">{formatDate(exam.date)}</span>
