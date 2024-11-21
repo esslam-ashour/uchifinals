@@ -4,8 +4,10 @@ import { Inter as FontSans } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import { cn } from "@/lib/utils";
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import "@/styles/globals.css";
+import { SP } from "next/dist/shared/lib/utils";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -37,6 +39,7 @@ export default function RootLayout({
         <NavBar />
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
