@@ -69,16 +69,6 @@ export const generateGoogleCalendarUrl = (event: CalendarEvent): string => {
   )}&dates=${formatToCalendarDate(event.start)}/${formatToCalendarDate(event.end)}`;
 };
 
-export const generateOutlookCalendarUrl = (event: CalendarEvent): string => {
-  return `https://outlook.live.com/calendar/0/deeplink/compose?subject=${encodeURIComponent(
-    event.title
-  )}&body=${encodeURIComponent(
-    event.description
-  )}&location=${encodeURIComponent(
-    event.location
-  )}&startdt=${formatToCalendarDate(event.start)}&enddt=${formatToCalendarDate(event.end)}`;
-};
-
 export const generateICSContent = (event: CalendarEvent): string => {
   return [
     'BEGIN:VCALENDAR',

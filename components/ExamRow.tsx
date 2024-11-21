@@ -13,7 +13,6 @@ import {
   formatTime,
   createCalendarEvent,
   generateGoogleCalendarUrl,
-  generateOutlookCalendarUrl,
   downloadICSFile,
 } from '@/lib/calendar-utils';
 
@@ -21,12 +20,6 @@ export default function ExamRow({ exam }: { exam: Exam }) {
   const addToGoogleCalendar = () => {
     const event = createCalendarEvent(exam);
     const url = generateGoogleCalendarUrl(event);
-    window.open(url, '_blank');
-  };
-
-  const addToOutlookCalendar = () => {
-    const event = createCalendarEvent(exam);
-    const url = generateOutlookCalendarUrl(event);
     window.open(url, '_blank');
   };
 
@@ -83,12 +76,6 @@ export default function ExamRow({ exam }: { exam: Exam }) {
               className="h-10 text-sm cursor-pointer"
             >
               Google Calendar
-            </DropdownMenuItem>
-            <DropdownMenuItem 
-              onClick={addToOutlookCalendar}
-              className="h-10 text-sm cursor-pointer"
-            >
-              Outlook Calendar
             </DropdownMenuItem>
             <DropdownMenuItem 
               onClick={addToAppleCalendar}
