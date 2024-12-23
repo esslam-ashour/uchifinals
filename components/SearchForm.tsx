@@ -28,6 +28,7 @@ export default function SearchForm({ searchParams, onInputChange, onSearch }: Se
             className="w-full"
           />
         </div>
+        <span>Current quarter: Autumn 2024</span>
       </form>
 
       <div className="flex justify-center">
