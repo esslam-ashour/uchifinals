@@ -10,26 +10,22 @@ interface SearchFormProps {
 }
 
 export default function SearchForm({ searchParams, onInputChange, onSearch }: SearchFormProps): React.ReactElement {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    onSearch();
+  };
+
   return (
-    <div className="sticky top-0 z-10 container my-6 py-4 px-10 bg-white shadow">
-      <form className="grid grid-rows-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-        <div className="row-span-1 md:col-span-3 lg:col-span-5">
+    <div className="sticky top-0 z-10 container my-6 py-4 px-4 md:px-10 bg-white">
+      <form className="grid grid-rows-2 md:grid-cols-4 lg:grid-cols-6 gap-4" onSubmit={handleSubmit}>
+        <div className="row-span-2 mb-6 md:col-span-4 lg:col-span-6">
           <Input
             id="details"
             name="details"
             value={searchParams.details}
             onChange={onInputChange}
             placeholder="Search by course name, course number, instructor name, or room..."
-          />
-        </div>
-        <div className="row-span-1 md:col-span-1 lg:col-span-1">
-          <Input
-            id="date"
-            name="date"
-            type="date"
-            className='justify-center'
-            value={searchParams.date}
-            onChange={onInputChange}
+            className="w-full"
           />
         </div>
       </form>
