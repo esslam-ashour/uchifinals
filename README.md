@@ -126,6 +126,8 @@ Distributed under the MIT license. See `LICENSE.txt` for more information.
 ## Contact
 
 Esslam Ashour - esslamashour@uchicago.edu
+[Linkedin](https://www.linkedin.com/in/esslam-ashour)
+[Website](https://www.esslam-ashour.com)
 
 Project Link: [https://github.com/esslam-ashour/uchifinals](https://github.com/esslam-ashour/uchifinals)
 
