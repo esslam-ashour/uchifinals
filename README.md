@@ -20,7 +20,7 @@
     Find your UChicago final exam schedule, fast and easy.
     <br />
     <br />
-    <a href="https://https://uchifinals.vercel.app">Use uchifinals here</a>
+    <a href="https://uchifinals.vercel.app">Use uchifinals here</a>
   </p>
 </div>
 
