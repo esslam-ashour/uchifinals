@@ -22,6 +22,8 @@ export async function GET(request: Request) {
 
    try {
     const exams = await prisma.exam.findMany({
+      skip,
+      take: pageSize,
       where: {
         AND: [
           details ? {
@@ -35,7 +37,6 @@ export async function GET(request: Request) {
         ]
       }
     });
-    
     
     return NextResponse.json(exams);
   } catch (error) {
