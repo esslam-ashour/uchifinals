@@ -1,6 +1,6 @@
 {
-  "name": "uchicago-final-schedule",
-  "version": "0.1.0",
+  "name": "uchifinals",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,7 +10,7 @@
     "vercel-build": "prisma generate && prisma migrate deploy && next build"
   },
   "dependencies": {
-    "@prisma/client": "^5.19.1",
+    "@prisma/client": "^6.3.0",
     "@radix-ui/react-dropdown-menu": "^2.1.2",
     "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-separator": "^1.1.0",
