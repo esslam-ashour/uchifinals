@@ -22,19 +22,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img width="1710" alt="image" src="https://github.com/user-attachments/assets/647b60b6-4ee3-4401-9c5a-5a1697e603b3" />
+Final exams are a critical part of a student’s academic journey, but the process of retrieving and organizing final exam schedules can be time-consuming and prone to errors. At the University of Chicago, the registrar releases an Excel sheet each quarter that contains the final exam schedule for all College courses. This format, while comprehensive, is inconvenient, difficult to navigate, and prone to human error.
 
-Each quarter, the UChicago registrar releases an Excel sheet containing the final exam schedules for all College courses. While this information is critical for students, the format is often cumbersome, difficult to navigate, and prone to human error, making it challenging to quickly find and organize exam dates and times.
+To address this issue, I developed uchifinals—a streamlined, user-friendly web tool that simplifies the process of searching for and managing final exam schedules. By transforming a complex Excel sheet into an intuitive digital interface, uchifinals helps students quickly access relevant exam information, reducing frustration and maximizing productivity.
 
-To solve this problem, I developed uchifinals, a user-friendly web tool designed to help students easily search for and manage their final exam schedules. With uchifinals, you can quickly locate your exam details by searching using your class code, course name, or instructor’s name. Features include:
+Key Features
+- 🔍 Powerful Search Functionality: Students can easily search for their final exams by class code, course name, or instructor. This feature significantly reduces the time spent searching through large datasets and helps students find their exam details more efficiently.
 
-- 🔍 Intuitive Search Functionality: Easily search for final exam details by class code, course name, or instructor name, allowing students to quickly find the information they need.
-  
-- 📅 Calendar Integration: Export final exam dates directly to Google or Apple calendars, ensuring you never miss an exam and can organize your schedule hassle-free.
+- 📅 Seamless Calendar Integration: With just a few clicks, students can export their final exam dates directly to Google or Apple calendars. This feature ensures that students can manage their time effectively, avoiding scheduling conflicts and staying organized.
 
-- 📊 Accessible Format: Transform the registrar’s Excel sheet into a more accessible, user-friendly interface, making it easier for students to navigate and find relevant exam information.
+- 📊 Data Accessibility and Usability: I transformed the registrar’s traditional Excel sheet into a more accessible, user-friendly interface. This not only makes the exam schedule easier to navigate, but also ensures that students can quickly retrieve accurate information without confusion.
 
-- ❌ Error Reduction: Minimize the risk of human error when manually extracting exam schedules from Excel files, offering a reliable and accurate solution.
+- ✅ Error Reduction: By automating the process of searching and exporting exam schedules, uchifinals minimizes the risk of human error when interpreting or copying data from Excel files. This ensures that students have reliable, accurate exam information.
 
 
 ### Built With
@@ -162,32 +161,9 @@ Project Link: [https://github.com/esslam-ashour/uchifinals](https://github.com/e
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/esslam-ashour/uchifinals.svg?style=for-the-badge
-[contributors-url]: https://github.com/esslam-ashour/uchifinals/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/esslam-ashour/uchifinals.svg?style=for-the-badge
-[forks-url]: https://github.com/esslam-ashour/uchifinals/network/members
-[stars-shield]: https://img.shields.io/github/stars/esslam-ashour/uchifinals.svg?style=for-the-badge
-[stars-url]: https://github.com/esslam-ashour/uchifinals/stargazers
-[issues-shield]: https://img.shields.io/github/issues/esslam-ashour/uchifinals.svg?style=for-the-badge
-[issues-url]: https://github.com/esslam-ashour/uchifinals/issues
-[license-shield]: https://img.shields.io/github/license/esslam-ashour/uchifinals.svg?style=for-the-badge
-[license-url]: https://github.com/esslam-ashour/uchifinals/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/esslam-ashour
-[product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
 [Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
