@@ -5,7 +5,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/esslam-ashour/uchifinals">
     <img src="app/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
@@ -22,9 +22,19 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]()
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/647b60b6-4ee3-4401-9c5a-5a1697e603b3" />
 
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
+Each quarter, the UChicago registrar releases an Excel sheet containing the final exam schedules for all College courses. While this information is critical for students, the format is often cumbersome, difficult to navigate, and prone to human error, making it challenging to quickly find and organize exam dates and times.
+
+To solve this problem, I developed uchifinals, a user-friendly web tool designed to help students easily search for and manage their final exam schedules. With uchifinals, you can quickly locate your exam details by searching using your class code, course name, or instructor’s name. Features include:
+
+- 🔍 Intuitive Search Functionality: Easily search for final exam details by class code, course name, or instructor name, allowing students to quickly find the information they need.
+  
+- 📅 Calendar Integration: Export final exam dates directly to Google or Apple calendars, ensuring you never miss an exam and can organize your schedule hassle-free.
+
+- 📊 Accessible Format: Transform the registrar’s Excel sheet into a more accessible, user-friendly interface, making it easier for students to navigate and find relevant exam information.
+
+- ❌ Error Reduction: Minimize the risk of human error when manually extracting exam schedules from Excel files, offering a reliable and accurate solution.
 
 
 ### Built With
@@ -53,7 +63,7 @@ This is an example of how to list things you need to use the software and how to
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/esslam-ashour/uchifinals.git
    ```
 3. Install NPM packages
    ```sh
@@ -65,7 +75,7 @@ This is an example of how to list things you need to use the software and how to
    ```
 5. Change git remote url to avoid accidental pushes to base project
    ```sh
-   git remote set-url origin github_username/repo_name
+   git remote set-url origin esslam-ashour/uchifinals
    git remote -v # confirm the changes
    ```
 
@@ -113,8 +123,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
+<a href="https://github.com/esslam-ashour/uchifinals/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=esslam-ashour/uchifinals" alt="contrib.rocks image" />
 </a>
 
 
@@ -131,9 +141,9 @@ Distributed under the project_license. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - esslamashour@uchicago.edu@esslamashour@uchicago.edu_client.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/esslam-ashour/uchifinals](https://github.com/esslam-ashour/uchifinals)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,18 +162,18 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/esslam-ashour/uchifinals.svg?style=for-the-badge
+[contributors-url]: https://github.com/esslam-ashour/uchifinals/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/esslam-ashour/uchifinals.svg?style=for-the-badge
+[forks-url]: https://github.com/esslam-ashour/uchifinals/network/members
+[stars-shield]: https://img.shields.io/github/stars/esslam-ashour/uchifinals.svg?style=for-the-badge
+[stars-url]: https://github.com/esslam-ashour/uchifinals/stargazers
+[issues-shield]: https://img.shields.io/github/issues/esslam-ashour/uchifinals.svg?style=for-the-badge
+[issues-url]: https://github.com/esslam-ashour/uchifinals/issues
+[license-shield]: https://img.shields.io/github/license/esslam-ashour/uchifinals.svg?style=for-the-badge
+[license-url]: https://github.com/esslam-ashour/uchifinals/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/esslam-ashour
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
