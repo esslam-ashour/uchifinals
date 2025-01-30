@@ -4,7 +4,8 @@
 <br />
 <div align="center">
   <a href="https://github.com/esslam-ashour/uchifinals">
-    <img src="app/favicon.ico" alt="Logo" width="80" height="80">
+    <img width="80" alt="image" src="https://github.com/user-attachments/assets/28662cb5-da7f-4cf2-9a0f-619ff3b7b9c6" />
+
   </a>
 <h3 align="center">uchifinals</h3>
   <p align="center">
