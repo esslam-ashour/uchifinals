@@ -35,5 +35,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# jest
+/coverage/
+.jest-cache/
+
 # vs code
 .vscode
