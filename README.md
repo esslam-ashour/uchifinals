@@ -36,17 +36,17 @@ Key Features
 - ✅ Error Reduction: By automating the process of searching and exporting exam schedules, uchifinals minimizes the risk of human error when interpreting or copying data from Excel files. This ensures that students have reliable, accurate exam information.
 
 ### Built With
-![React][React.js]
+[React.js]
 
-![Tailwind CSS][Tailwind CSS]
+[Tailwind CSS]
 
-![Next][Next.js]
+[Next.js]
 
-![PostgreSQL][PostgreSQL]
+[PostgreSQL]
 
-![Prisma][Prisma]
+[Prisma]
 
-![Docker][Docker]
+[Docker]
 
 
 
