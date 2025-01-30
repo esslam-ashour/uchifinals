@@ -1,16 +1,12 @@
 <a id="readme-top"></a>
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/esslam-ashour/uchifinals">
     <img src="app/favicon.ico" alt="Logo" width="80" height="80">
   </a>
-
 <h3 align="center">uchifinals</h3>
-
   <p align="center">
     find your uchicago final exam times
     <br />
@@ -47,8 +43,6 @@ Key Features
 ![Prisma][Prisma]
 
 ![Docker][Docker]
-
-
 
 ## Installation Guide
 
@@ -111,14 +105,6 @@ Before you begin, ensure you have the following installed on your machine:
 
 uchifinals should now be running on http://localhost:3000.
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -134,8 +120,7 @@ Don't forget to give the project a star! Thanks!
 <!-- LICENSE -->
 ## License
 
-Distributed under the project_license. See `LICENSE.txt` for more information.
-
+Distributed under the MIT license. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
@@ -143,7 +128,6 @@ Distributed under the project_license. See `LICENSE.txt` for more information.
 Esslam Ashour - esslamashour@uchicago.edu
 
 Project Link: [https://github.com/esslam-ashour/uchifinals](https://github.com/esslam-ashour/uchifinals)
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
