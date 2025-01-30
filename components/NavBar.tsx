@@ -7,26 +7,6 @@ const fettefraktur = localFont({
 
 export default function NavBar() {
   return (
-<<<<<<< HEAD
-    <div>
-      <header className="text-white">
-        <div className="container mx-auto flex md:flex-row items-center justify-between">
-          <div className={`${fettefraktur.className} text-4xl md:text-5xl lg:text-6xl mt-6 md:my-8 lg:mb-2`}>
-            uchifinals
-          </div>
-          <div className="flex items-center space-x-4">
-            <div className="text-sm">
-              <div>Made by Esslam Ashour, Class of 2027</div>
-              <a href="https://github.com/esslam-ashour">GitHub</a><br></br>
-              <a href="https://www.linkedin.com/in/esslam-ashour/">LinkedIn</a>
-            </div>
-          </div>
-        </div>
-      </header>
-    </div>
-  )
-}
-=======
     <header className="text-white py-2 md:py-4">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-2 md:px-4">
         <Link href="/">
@@ -58,4 +38,3 @@ export default function NavBar() {
     </header>
   );
 }
->>>>>>> 9156fe287f1cde12a19074a0c313f38f5c9ffcda
