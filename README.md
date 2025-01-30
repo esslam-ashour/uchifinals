@@ -24,8 +24,6 @@
   </p>
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -47,183 +45,119 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img width="1710" alt="image" src="https://github.com/user-attachments/assets/b710fb07-aa04-4b04-a160-ed9ce06ef5dc" />
+<img width="1710" alt="uchifinals screenshot" src="https://github.com/user-attachments/assets/b710fb07-aa04-4b04-a160-ed9ce06ef5dc" />
 
-The UChicago Registrar releases The College final exam schedule every quarter, but in a very inconvenient and inaccessible format. uchifinals fixes this by providing an intuitive, fast, and simple way for UChicago students to find their final exams.
+uchifinals modernizes how UChicago students access their final exam schedules. Instead of wrestling with hard-to-read Excel sheets from the Registrar, students can quickly find their exam times through an intuitive web interface.
 
-Here's why:
-**Intuitive search system** - uchifinals has an intuitive and expansive search system that allows students to search for their exams using different criteria, such as course name, instructor, and exam date.
-
-**Easily export schedule to calendar** - uchifinals allows students to export any exam to their Google/Apple calendar with the click of a button, removing the need to manually create events for final exams.
-
-**Replaces an inconvenient system** - each quarter the UChicago registrar sends out final exams in an inconvenient and barely readable excel sheet, uchifinals can completely replace it and make the UChicago experience just a bit easier.
+Key Features:
+* **Smart Search System**: Find your exams by course name, instructor, or exam date
+* **Calendar Integration**: Export exam schedules directly to Google/Apple Calendar
+* **Mobile-Friendly Design**: Access your schedule on any device
+* **Real-Time Updates**: Always displays the latest exam schedule information
 
 ### Built With
 
 * [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]]
-* [![PostgreSQL][PostgreSQL][PostgreSQL-url]]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+* [![React][React.js]][React-url]
+* [![Tailwind][Tailwind-shield]][Tailwind-url]
+* [![PostgreSQL][PostgreSQL-shield]][PostgreSQL-url]
+* [![Docker][Docker-shield]][Docker-url]
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To set up uchifinals locally for development, follow these steps:
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+* Node.js (18.x or higher)
+* Docker
 * npm
   ```sh
   npm install npm@latest -g
   ```
+* PostgreSQL (if running without Docker)
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repository
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/your_username/uchifinals.git
    ```
-3. Install NPM packages
+
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+
+3. Create a `.env` file in the root directory with the following variables:
    ```
-5. Change git remote url to avoid accidental pushes to base project
+   DATABASE_URL=postgresql://user:password@localhost:5432/uchifinals
+   NEXT_PUBLIC_API_URL=http://localhost:3000
+   ```
+
+4. Start the PostgreSQL database using Docker
    ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
+   docker-compose up -d
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+5. Run the development server
+   ```sh
+   npm run dev
+   ```
 
-
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+1. **Search for Exams**
+   * Enter course name, instructor, or date in the search bar
+   * Results update in real-time as you type
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+2. **View Exam Details**
+   * Click on a course to see full exam information
+   * View location, time, and special instructions
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+3. **Export to Calendar**
+   * Select the exam(s) you want to add
+   * Click the calendar icon to export
+   * Choose between Google Calendar or Apple Calendar
 
-
-
-<!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [x] Basic search functionality
+- [x] Calendar export feature
+- [ ] Multiple quarter support
+- [ ] User accounts for saving preferences
+- [ ] Mobile app version
+- [ ] API for third-party integrations
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Top contributors:
-
-<a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=othneildrew/Best-README-Template" alt="contrib.rocks image" />
-</a>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
 ## License
 
 Distributed under the Unlicense License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Esslam Ashour - [@your_twitter](https://twitter.com/your_username) - your.email@uchicago.edu
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+Project Link: [https://github.com/your_username/uchifinals](https://github.com/your_username/uchifinals)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/esslam-ashour
-[product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-
+[Tailwind-shield]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
+[PostgreSQL-shield]: https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
+[PostgreSQL-url]: https://www.postgresql.org/
+[Docker-shield]: https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white
+[Docker-url]: https://www.docker.com/
