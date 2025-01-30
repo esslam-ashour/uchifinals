@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/esslam-ashour/uchifinals">
-    <img width="200" alt="image" src="https://github.com/user-attachments/assets/28662cb5-da7f-4cf2-9a0f-619ff3b7b9c6" />
+    <img width="300" alt="image" src="https://github.com/user-attachments/assets/28662cb5-da7f-4cf2-9a0f-619ff3b7b9c6" />
 
   </a>
 <h3 align="center">uchifinals</h3>
