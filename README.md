@@ -37,8 +37,8 @@ Key Features
 
 ### Built With
 
-* ![Next][Next.js]]
-* ![React][React.js]]
+* [![Next][Next.js]]
+* [![React][React.js]]
 
 
 
