@@ -1,8 +1,14 @@
 import { PrismaClient } from '@prisma/client';
 
-const prismaClientSingleton = () => {
-  return new PrismaClient()
-}
+const prismaClientSingleton = () => new PrismaClient({
+  datasources: {
+    db: {
+      url: process.env.DATABASE_URL + 
+        `&pool_timeout=10` +
+        `&connection_limit=${process.env.NODE_ENV === 'production' ? 10 : 5}`
+    },
+  },
+});
 
 declare const globalThis: {
   prismaGlobal: ReturnType<typeof prismaClientSingleton>;
