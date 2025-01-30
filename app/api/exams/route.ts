@@ -15,24 +15,27 @@ export async function GET(request: Request) {
 
   const url = new URL(request.url);
   const details = url.searchParams.get('details');
-  
+
   const page = Number(url.searchParams.get('page')) || 1;
   const pageSize = 50;
   const skip = (page - 1) * pageSize;
 
-  try {
+   try {
     const exams = await prisma.exam.findMany({
-      skip,
-      take: pageSize,
-      where: details ? {
-        OR: [
-          { course: { contains: details } },
-          { room: { contains: details } },
-          { instructor: { contains: details } },
-          { sectionTitle: { contains: details } }
+      where: {
+        AND: [
+          details ? {
+            OR: [
+              { course: { contains: details, mode: 'insensitive' } },
+              { room: { contains: details, mode: 'insensitive' } },
+              { instructor: { contains: details, mode: 'insensitive' } },
+              { sectionTitle: { contains: details, mode: 'insensitive' } },
+            ]
+          } : {},
         ]
-      } : {}
+      }
     });
+    
     
     return NextResponse.json(exams);
   } catch (error) {
