@@ -36,7 +36,8 @@
     "redis": "^4.7.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
-    "upstash": "^0.0.1"
+    "upstash": "^0.0.1",
+    "vercel": "^39.4.2"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.0",
